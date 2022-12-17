@@ -1,0 +1,33 @@
+@import "reset"
+@import "normalize"
+@import "variables"
+@import "loader"
+
+button
+    border: none
+    cursor: pointer
+
+.validation
+    color: $danger-color
+    padding: 10px 0
+
+.overlay
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    height: 100vh
+    width: 100vw
+    overflow-y: auto
+    z-index: 50
+    cursor: pointer
+    background-color: $overlay-color
+    
+.modal
+    display: none
+    
+.show
+    display: block
+
+.no-scroll
+    overflow: hidden
