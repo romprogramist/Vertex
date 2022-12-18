@@ -14,6 +14,9 @@
 	<environment exclude="Development">
 		@* important js, maybe analytics *@
 	</environment>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 <environment exclude="Development">
@@ -33,7 +36,15 @@
 
 <footer>
 	<div>
-		@* &copy; 2023 - Vertex *@
+		<a href="https://t.me/+79180006861">
+			<img src="images/icons/telegramm.svg" alt="" title="">
+		</a>
+		<a href="tel:+37493088593">
+			<img src="images/icons/phone.svg" alt="" title="">
+		</a>
+		<a href="https://wa.me/79180006861">
+			<img src="images/icons/watsapp.svg" alt="" title="">
+		</a>
 	</div>
 </footer>
 <div class="overlay" id="loader">
@@ -43,15 +54,17 @@
 	<div class="modal" id="application">
 		<form>
 			<span class="close-m" title="Закрыть">&times;</span>
-			<h2>Оставьте заявку</h2>
-			<div>Оставьте заявку, и мы перезвоним Вам в ближайшее время</div>
-			<div>
+			<h3>Оставьте заявку и мы с вами свяжемся</h3>
+			<div>Вы заказали базисная пластмассу 
+				<span>5</span> шт. мономер для базисной пластмассы горячей полимеризации <span>7</span> шт.
+			</div>
+			<label>
 				<input placeholder="Введите имя" type="text" name="name">
-			</div>
-			<div>
+			</label>
+			<label>
 				<input placeholder="Введите номер" type="tel" name="phone">
-			</div>
-			<p>*Отправляя заявку, Вы потверждаете согласие согласие на обработку введенных персональных данных</p>
+			</label>
+			<p>Нажимая на кнопку Вы даете согласие на обработку персональных данных</p>
 			<div class="validation"></div>
 			<button type="submit">Оставить заявку</button>
 		</form>

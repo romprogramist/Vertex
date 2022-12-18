@@ -3,9 +3,21 @@
 @import "variables"
 @import "loader"
 
+*
+    font-family: 'Nunito', sans-serif
+    font-weight: 300
+    box-sizing: border-box
+
+
 button
     border: none
     cursor: pointer
+    background: #37474F
+    border-radius: 4px
+    padding: 12px 30px
+    display: flex
+    margin: 25px auto 0 auto
+    font-weight: 800
 
 .validation
     color: $danger-color
@@ -31,3 +43,70 @@ button
 
 .no-scroll
     overflow: hidden
+    
+footer
+    background: #37474F
+    height: 111px
+    position: absolute
+    width: 100%
+    & > div
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        a
+            & > img
+                margin: 5px
+.overlay
+    .modal
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: #FFFFFF
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.25)
+        border-radius: 2px
+        padding: 45px 20px
+        max-width: 400px 
+        width: 95%
+        form
+            .close-m
+                position: absolute
+                right: 20px
+                top: 20px
+                font-size: 45px
+            h3
+                font-weight: 600
+                font-size: 26px
+                line-height: 31px
+                text-align: center
+                margin-top: 25px
+            & > div
+                margin-top: 15px
+                font-weight: 500
+                font-size: 15px
+                line-height: 19px
+                text-align: center
+                color: #37474F
+            label
+                display: block
+                margin-top: 20px
+                input
+                    border: none
+                    width: 100%
+                    background: #FFFFFF
+                    border-radius: 4px
+                    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.25))
+                    padding: 15px 0 15px 15px
+            & > p
+                text-align: center
+                margin-top: 15px
+                font-weight: 500
+                font-size: 12px
+                line-height: 16px
+                color: #37474F
+            .validation
+                color: red
+            & > button
+                margin-top: 0
+                color: #EEEEEE
