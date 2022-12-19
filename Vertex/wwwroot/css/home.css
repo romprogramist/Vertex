@@ -1,5 +1,5 @@
 .main {
-  padding: 50px 10px;
+  padding: 50px 0;
   background: rgba(208, 252, 255, 0.08);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
@@ -36,7 +36,7 @@
 }
 .main .wrapper .item > img {
   max-width: 200px;
-  width: 40%;
+  width: 35%;
   margin-right: 10px;
 }
 .main .wrapper .item .title .discount {
@@ -82,8 +82,23 @@
   justify-content: space-between;
   max-width: 170px;
 }
+.main .wrapper .item .title .price .plus-minus {
+  display: flex;
+  justify-content: space-between;
+}
 .main .wrapper .item .title .price .plus-minus p {
   font-weight: 500;
+  width: 80px;
+  text-align: right;
+}
+.main .wrapper .item .title .price .plus-minus .caunt {
+  text-align: center;
+}
+.main .wrapper .item .title .price .plus-minus span {
+  font-weight: 500;
+}
+.main .wrapper .item .title .price .plus-minus img {
+  cursor: pointer;
 }
 .main button {
   background: #37474F;
