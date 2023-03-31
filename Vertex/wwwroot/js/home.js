@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function plussFun () {
         pluss.forEach(el => {
             el.addEventListener('click', () => {
-                let caunt = parseInt(el.nextElementSibling.textContent);
-                el.nextElementSibling.innerHTML = '';
+                let caunt = parseInt(el.previousElementSibling.textContent);
+                el.previousElementSibling.innerHTML = '';
                 caunt += 1
-                el.nextElementSibling.innerHTML = caunt;
+                el.previousElementSibling.innerHTML = caunt;
                 let orignPrice = parseInt(el.parentNode.parentNode.firstElementChild.firstElementChild.textContent);
                 for(let i = 1; i <= caunt; i++) {
                     multiplication = i
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let sumDis10 = orignPrice - dis5;
                     sum = sumDis10 * multiplication;
                 }
-                el.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = sum;
+                el.nextElementSibling.innerHTML = sum;
             })
         })
     }
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function minusFun() {
         minus.forEach(el => {
             el.addEventListener('click', () => {
-                let caunt = parseInt(el.previousElementSibling.textContent);
+                let caunt = parseInt(el.nextElementSibling.textContent);
                 let orignPrice = parseInt(el.parentNode.parentNode.firstElementChild.firstElementChild.textContent);
-                el.previousElementSibling.innerHTML = '';
+                el.nextElementSibling.innerHTML = '';
                 caunt -= 1
                 multiplication--
                 if(caunt <= 0) {
@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     sum = sumDis5 * multiplication;
                 }
                 if(sum <= 0) sum = 0;
-                el.nextElementSibling.innerHTML = sum;
-                el.previousElementSibling.innerHTML = caunt;
+                el.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML = sum;
+                el.nextElementSibling.innerHTML = caunt;
 
             })
         })
